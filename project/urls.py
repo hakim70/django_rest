@@ -10,7 +10,7 @@ urlpatterns = [
     path('dashboard_super/', include('supervisor.urls')),
     path('dashboard_client/', include('client.urls')),
     path('authmobile/', include('authmobile.urls')),  # Spécifique au chemin 'authmobile/'
-    path('client_mob/', include('client_mob.urls')),  # Spécifique au chemin 'client_mob/'
+    path('', include('client_mob.urls')),  # Spécifique au chemin 'client_mob/'
 ]
 
 if settings.DEBUG:
