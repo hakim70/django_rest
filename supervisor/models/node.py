@@ -18,7 +18,6 @@ class Node(models.Model):
     parcelle        = models.ForeignKey(Parcelle, on_delete=models.CASCADE, related_name='nodes')
 
 
-
     def __str__(self):
      return f'{self.name}' 
     
